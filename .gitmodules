@@ -1,0 +1,3 @@
+[submodule "vue-ui-module"]
+	path = vue-ui-module
+	url = git@github.com:pillarlee16/vue-ui-module.git
