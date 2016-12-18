@@ -1,10 +1,12 @@
 <template>
-  <div class="hello">
+  <div class="hello" v-on:mouseover="focusIn" v-on:mouseleave="focusOut">
     <h1>{{ msg }}</h1>
   </div>
 </template>
 
 <script>
+//import { TweenMax } from 'gsap'
+
 export default {
   data () {
     return {
@@ -14,7 +16,15 @@ export default {
       // its initial state.
       msg: 'Hello World!'
     }
-  }
+  },
+  methods: {
+    focusIn() {
+  //    TweenMax.to(this.$el, 0.3, { x: 50 });
+    },
+    focusOut() {
+  //    TweenMax.to(this.$el, 0.3, { x: 0 });
+    },
+  },
 }
 </script>
 

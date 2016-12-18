@@ -4,7 +4,7 @@
     <button></button>
     <hello></hello>
     <p>
-      Welcome to your Vue.js app!
+      Welcome to your Vue.js app! {{ time }}
     </p>
     <p>
       To get a better understanding of how this boilerplate works, check out
@@ -24,10 +24,17 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 import Hello from './components/Hello';
 import Button from 'lumi/components/Button';
 
 export default {
+  data() {
+    return {
+      time: _.now(),
+    };
+  },
   components: {
     Hello,
     Button,
