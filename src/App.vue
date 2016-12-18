@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <img class="logo" src="./assets/logo.png">
+    <button></button>
     <hello></hello>
     <p>
       Welcome to your Vue.js app!
@@ -23,11 +24,13 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Hello from './components/Hello';
+import Button from 'lumi/components/Button';
 
 export default {
   components: {
-    Hello
+    Hello,
+    Button,
   }
 }
 </script>
