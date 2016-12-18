@@ -6,6 +6,7 @@
 
 <script>
 //import { TweenMax } from 'gsap'
+import motion from 'lumi/libs/motion';
 
 export default {
   data () {
@@ -20,9 +21,11 @@ export default {
   methods: {
     focusIn() {
   //    TweenMax.to(this.$el, 0.3, { x: 50 });
+      motion.engine.to(this.$el, 0.3, { x: 50 });
     },
     focusOut() {
   //    TweenMax.to(this.$el, 0.3, { x: 0 });
+      motion.engine.to(this.$el, 0.3, { x: 0 });
     },
   },
 }
